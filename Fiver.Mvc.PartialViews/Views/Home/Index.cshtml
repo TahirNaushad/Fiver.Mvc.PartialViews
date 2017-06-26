@@ -1,0 +1,12 @@
+﻿@using Fiver.Mvc.PartialViews.Models.Home
+@model EmployeeViewModel
+
+<div style="border: 1px solid black; margin: 5px">
+    <h2>Employee Details (parent view)</h2>
+
+    <p>Firstname: @Model.Firstname</p>
+    <p>Surname: @Model.Surname</p>
+
+    @Html.Partial("_Address.cshtml", Model.Address)
+</div>
+
